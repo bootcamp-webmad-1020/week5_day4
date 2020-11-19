@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Galería de imágenes</h1>
+
+
+    <div class="row justify-content-around gallery-individual">
+
+        {{#each allPictures}}
+
+        <div class="col-md-4">
+            <figure>
+                <img src="{{path}}" alt="{{imageName}}">
+                <figcaption>
+                    <p>{{imageName}}</p>
+                </figcaption>
+            </figure>
+
+        </div>
+
+        {{/each}}
+    </div>
+
+</div>
